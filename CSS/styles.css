@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body > :nth-child(1) {
+  background: #D70022;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 10vh;
+  place-content: center;
+}
+body > :nth-child(1) > :nth-child(1) {
+  width: 85%;
+  max-width: 1200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  font-size: 17px;
+  color: white;
+}
+body > :nth-child(1) > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+body > :nth-child(1) > :nth-child(1) > :nth-child(2) a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body > :nth-child(1) > :nth-child(1) > :nth-child(2) a div {
+  width: 30px;
+}
+body > :nth-child(1) > :nth-child(1) > :nth-child(2) a div svg {
+  fill: rgb(255, 255, 255);
+  width: 100%;
+}
+body > :nth-child(2) {
+  width: 100%;
+  height: 90vh;
+  background: url("../IMG/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body > :nth-child(2) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  place-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  background: blue;
+  padding: 2.5rem 0rem;
+}
+body > :nth-child(2) > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}

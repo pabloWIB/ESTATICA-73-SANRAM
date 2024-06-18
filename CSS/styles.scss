@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+// DEFINIR COLORES 
+
+$rojo: #D70022;
+$grisClaro: #969696;
+$negroLight: #323232;
+$amarillo: #FDDB3A;
+
+// DEFINIR COLORES ---
+
+// FONT FAMILY 
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+// FONT FAMILY ---
+
+// CREACIÓN DE BARRAS NAV 1 Y NAV 2 
+
+body{
+    >:nth-child(1){
+        background: $rojo;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        height: 10vh;
+        place-content: center;
+        >:nth-child(1){
+            width: 85%;
+            max-width: 1200px;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            >:nth-child(1){
+                font-size: 17px;
+                color: white;
+            }
+            >:nth-child(2){
+                display: flex;
+                align-items: center;
+                gap: 1rem;  
+                a{
+                    display: flex;
+                    place-content: center;
+                    align-items: center;
+                    div{
+                        width: 30px;
+                        svg{
+                            fill: rgb(255, 255, 255);
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    >:nth-child(2){
+       width: 100%;
+       height: 90vh;
+       background: url('../IMG/background.svg');
+       background-size: cover;
+       background-repeat: no-repeat;
+        >:nth-child(1){
+            display: flex;
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            align-items: center;
+            place-content: center;
+            justify-content: space-between;
+            flex-flow: column wrap;
+            background: blue;
+            padding: 2.5rem 0rem;
+            >:nth-child(1){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+
+            }
+            >:nth-child(2){
+            }
+        }
+
+    }
+}
+
