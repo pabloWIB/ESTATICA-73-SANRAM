@@ -114,10 +114,27 @@ body{
                 justify-content: center;
                 gap: 1.75rem;
                 >:nth-child(1){
+                    display: flex;
+                    flex-flow: row wrap;
+                    align-items: center;
+                    gap: .5rem;
+                    display: none;
+                    a{
+                        display: flex;
+                        place-content: center;
+                        div{
+                            width: 35px;
+                            svg{
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+                >:nth-child(2){
                     font-size: 17px;
                     color: $rojo;
                 }
-                >:nth-child(2){
+                >:nth-child(3){
                     width: 100%;
                     text-align: center;
                     h2{
@@ -126,7 +143,7 @@ body{
                         font-size: 45px;
                     }
                 }
-                >:nth-child(3){
+                >:nth-child(4){
                     width: 80%;
                     text-align: center;
                     p{
@@ -134,7 +151,7 @@ body{
                         font-size: 16px;
                     }
                 }
-                >:nth-child(4){
+                >:nth-child(5){
                     all: unset;
                     display: flex;   
                     background: $verdeWhat;
@@ -175,144 +192,97 @@ body{
 @media(max-width: 875px){
     body{
         >:nth-child(1){
-            background: $rojo;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            padding: .75rem 0rem;
-            place-content: center;
             >:nth-child(1){
-                width: 85%;
-                max-width: 1200px;
-                display: flex;
-                flex-flow: row nowrap;
-                align-items: center;
-                justify-content: space-between;
+                width: 90%;
+                justify-content: center;
                 >:nth-child(1){
-                    font-size: 16px;
+                    text-align: center;
+                    font-size: 14px;
                     color: white;
                 }
                 >:nth-child(2){
-                    display: flex;
-                    align-items: center;
-                    gap: 1rem;  
-                    a{
-                        display: flex;
-                        place-content: center;
-                        align-items: center;
-                        div{
-                            width: 25px;
-                            svg{
-                                fill: rgb(255, 255, 255);
-                                width: 100%;
-                            }
-                        }
-                    }
+                    display: none;
                 }
             }
         }
         >:nth-child(2){
-           width: 100%;
-           background: url('../IMG/background.svg');
-           background-size: cover;
-           background-repeat: no-repeat;
             >:nth-child(1){
-                display: flex;
-                width: 85%;
-                max-width: 1200px;
-                margin: 0 auto;
-                align-items: center;
-                place-content: center;
-                justify-content: space-between;
-                flex-flow: column nowrap;
-                gap: 1.5rem;
+                width: 90%;
+                gap: 2.5rem;
                 padding: 2.25rem 0rem;
-                height: 100%;
                 >:nth-child(1){
-                    display: flex;
-                    flex-flow: row wrap;
-                    align-items: center;
-                    width: 100%;
-                    justify-content: space-between;
-                    >:nth-child(1){
-                        display: none;
-                    }
-                    >:nth-child(2){
-                        width: 100%;
-                        max-width: 225px;
-                        img{
-                            width: 100%;
+                    a{
+                        all: unset;
+                        font-size: 15px;
+                        cursor: pointer;
+                        &:hover{
+                            text-decoration: underline;
+                            text-underline-offset: .15rem;
                         }
                     }
-                    >:nth-child(3){
+                    >:nth-child(1){
+                        width: 33%;
                         display: flex;
-                        flex-flow: row wrap;
-                        gap: 1rem;
-                        a{
-                            all: unset;
-                            font-size: 17px;
-                            cursor: pointer;
-                            &:hover{
-                                text-decoration: underline;
-                                text-underline-offset: .15rem;
-                            }
+                    }
+                    >:nth-child(2){
+                        width: 33%;
+                        max-width: 200px;
+                    }
+                    >:nth-child(3){
+                        width: 33%;
+                        justify-content: flex-end;
+                        >:nth-child(1){
+                            font-size: 15px;
+                        }
+                        >:nth-child(2){
+                            display: none;
                         }
                     }
                 }
                 >:nth-child(2){
-                    display: flex;
-                    flex-flow: column wrap;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 1.75rem;
+                    gap: 1.5rem;
                     >:nth-child(1){
-                        font-size: 17px;
-                        color: $rojo;
+                        gap: 1.75rem;
+                        display: flex;
+                        a{
+                            display: flex;
+                            place-content: center;
+                            div{
+                                width: 25px;
+                                svg{
+                                    width: 100%;
+                                    fill: $rojo;
+                                }
+                            }
+                        }
                     }
                     >:nth-child(2){
+                        font-size: 16px;
+                        color: $rojo;
+                    }
+                    >:nth-child(3){
                         width: 100%;
                         text-align: center;
                         h2{
                             all: unset;
                             font-weight: 600;
-                            font-size: 45px;
-                        }
-                    }
-                    >:nth-child(3){
-                        width: 80%;
-                        text-align: center;
-                        p{
-                            all: unset;
-                            font-size: 16px;
+                            font-size: 35px;
+                            br{
+                                display: none;
+                            }
                         }
                     }
                     >:nth-child(4){
-                        all: unset;
-                        display: flex;   
-                        background: $verdeWhat;
-                        flex-flow: row wrap;
-                        border-radius: 15px;
-                        cursor: pointer;
-                        transition: .3s;
-                        align-items: center;
-                        gap: 1rem;
-                        padding: .75rem 1.5rem;
-                        &:hover{
-                            scale: 1.1;
-                            transition: .3s;
+                        width: 90%;
+                        p{
+                            all: unset;
+                            font-size: 15px;
                         }
-                        >:nth-child(1){
-                            h5{
-                                all: unset;
-                                color: white;
-    
-                            }
-                        }
+                    }
+                    >:nth-child(5){
+                        padding: .55rem 1.35rem;
                         >:nth-child(2){
-                            width: 35px;
-                            img{
-                                width: 100%;
-                            }
+                            width: 30px;
                         }
                     }
                 }
