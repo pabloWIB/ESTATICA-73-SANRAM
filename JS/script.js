@@ -96,8 +96,9 @@ toggleAnimationN2();
 
 function toggleAnimationN3() {
     var targetSection = document.getElementById("mainID3");
+    var mainID3Get = document.getElementById('mainID3Get');
     if (isElementInViewport(targetSection)) {
-        targetSection.classList.add('animationN1');
+        mainID3Get.classList.add('animationN1');
     } 
 }
 
@@ -179,7 +180,7 @@ function scrollValue3() {
     var scroll = window.scrollY;
     if (scroll < 10) {
         mainID1.classList.remove('animationN1');
-        mainID3.classList.remove('animationN1');
+        mainID3Get.classList.remove('animationN1');
 
         sectionAnim1.classList.remove('cardAnimationAfter');
         sectionAnim2.classList.remove('cardAnimationAfter');
@@ -191,3 +192,11 @@ function scrollValue3() {
 window.addEventListener('scroll', scrollValue3);
 
 // RESET VIEWPORT ANIMATIONS ---
+
+// dateCopyright
+
+var fecha = new Date();
+var fechaAño = fecha.getFullYear();
+document.getElementById('dateCopyright').textContent = fechaAño;
+
+// dateCopyright

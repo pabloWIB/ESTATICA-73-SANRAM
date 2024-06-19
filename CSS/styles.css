@@ -265,6 +265,7 @@ body > :nth-child(2) > :nth-child(1) > :nth-child(2) > :nth-child(5) {
           align-items: center;
   gap: 1rem;
   padding: 0.75rem 1.5rem;
+  cursor: pointer;
 }
 body > :nth-child(2) > :nth-child(1) > :nth-child(2) > :nth-child(5):hover {
   scale: 1.1;
@@ -882,4 +883,491 @@ body section > :nth-child(1) > :nth-child(3) > :nth-child(3) h3 {
 body section > :nth-child(1) > :nth-child(3) > :nth-child(3) p {
   color: #969696;
   font-size: 16px;
+}
+
+body section > :nth-child(1) > :nth-child(4) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2.25rem;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1rem;
+  -webkit-box-shadow: 0px 0px 2px 2px rgb(218, 218, 218);
+          box-shadow: 0px 0px 2px 2px rgb(218, 218, 218);
+  border-radius: 12.5px;
+  width: 32%;
+  position: relative;
+  padding: 1rem 0rem;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(1) {
+  position: absolute;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  background: #D70022;
+  top: 0;
+  -webkit-transform: translateY(-50%) translateX(50%);
+          transform: translateY(-50%) translateX(50%);
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(2), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(2) {
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem 0rem;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(2) p, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(2) p {
+  all: unset;
+  color: #323232;
+  line-height: 1.25rem;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+  border-top: 1px solid black;
+  padding: 1rem 0rem;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(1) > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  max-width: 40px;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(1) > :nth-child(1) img, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(1) > :nth-child(1) img {
+  border-radius: 50%;
+  width: 100%;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(1) > :nth-child(2) h4, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(1) > :nth-child(2) h4 {
+  all: unset;
+  font-size: 16px;
+  font-weight: 600;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(2), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.15rem;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(2) div, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(2) div {
+  width: 100%;
+  max-width: 15px;
+}
+body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(2) div svg, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(2) div svg {
+  width: 100%;
+  fill: #FDDB3A;
+}
+
+@media (max-width: 875px) {
+  body section > :nth-child(1) > :nth-child(4) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 2.25rem;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2.25rem;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div {
+    gap: 0.75rem;
+    width: 100%;
+    padding: 0.75rem 0rem;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(1) {
+    height: 30px;
+    width: 30px;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(2), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(2) {
+    padding: 0.75rem 0rem;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(2) p, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(2) p {
+    font-size: 15.5px;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) {
+    padding: 0.75rem 0rem;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(1) {
+    gap: 0.75rem;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(1) > :nth-child(1), body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(1) > :nth-child(1) {
+    max-width: 35px;
+  }
+  body section > :nth-child(1) > :nth-child(4) > :nth-child(1) > div > :nth-child(3) > :nth-child(2) div, body section > :nth-child(1) > :nth-child(4) > :nth-child(2) > div > :nth-child(3) > :nth-child(2) div {
+    max-width: 17px;
+  }
+}
+body section > :nth-child(1) > :nth-child(5) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 3.5rem;
+  width: 100%;
+  max-width: 1200px;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.9);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.9);
+  border-radius: 15px;
+  padding: 2.25rem 0rem;
+}
+body section > :nth-child(1) > :nth-child(5) h3, body section > :nth-child(1) > :nth-child(5) p {
+  all: unset;
+}
+body section > :nth-child(1) > :nth-child(5) h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+body section > :nth-child(1) > :nth-child(5) > :nth-child(3) {
+  all: unset;
+  background: #25D366;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 15px;
+  padding: 1rem 2.15rem;
+  cursor: pointer;
+}
+body section > :nth-child(1) > :nth-child(5) > :nth-child(3) h5 {
+  all: unset;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+body section > :nth-child(1) > :nth-child(5) > :nth-child(3):hover {
+  scale: 1.1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+@media (max-width: 875px) {
+  body section > :nth-child(1) > :nth-child(5) h3, body section > :nth-child(1) > :nth-child(5) p {
+    all: unset;
+  }
+  body section > :nth-child(1) > :nth-child(5) h3 {
+    font-size: 17px;
+    font-weight: 700;
+  }
+}
+body footer {
+  margin-top: 3.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 2rem;
+}
+body footer > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+body footer > :nth-child(1) > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  gap: 2rem;
+}
+body footer > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+  width: 100%;
+  max-width: 350px;
+}
+body footer > :nth-child(1) > :nth-child(1) > :nth-child(1) img {
+  width: 100%;
+}
+body footer > :nth-child(1) > :nth-child(1) > :nth-child(2) p {
+  color: #D70022;
+}
+body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) div {
+  cursor: pointer;
+}
+body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) div a {
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) div a svg {
+  width: 100%;
+  fill: rgb(0, 0, 0);
+}
+body footer > :nth-child(1) > :nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+}
+body footer > :nth-child(1) > :nth-child(2) div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  gap: 0.5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+body footer > :nth-child(2) {
+  background: #D70022;
+  padding: 0.5rem 0rem;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 750px) {
+  body footer {
+    margin-top: 3.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 2rem;
+  }
+  body footer > :nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    gap: 1rem;
+  }
+  body footer > :nth-child(1) > :nth-child(1) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    gap: 2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body footer > :nth-child(1) > :nth-child(1) > :nth-child(1) {
+    width: 100%;
+    max-width: 350px;
+  }
+  body footer > :nth-child(1) > :nth-child(1) > :nth-child(1) img {
+    width: 100%;
+  }
+  body footer > :nth-child(1) > :nth-child(1) > :nth-child(2) p {
+    color: #D70022;
+  }
+  body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 1rem;
+  }
+  body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) div {
+    cursor: pointer;
+  }
+  body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) div a {
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    place-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer > :nth-child(1) > :nth-child(1) > :nth-child(3) div a svg {
+    width: 100%;
+    fill: rgb(0, 0, 0);
+  }
+  body footer > :nth-child(1) > :nth-child(2) {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  body footer > :nth-child(1) > :nth-child(2) div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    gap: 0.5rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body footer > :nth-child(2) {
+    background: #D70022;
+    padding: 0.5rem 0rem;
+    text-align: center;
+    color: white;
+  }
 }
