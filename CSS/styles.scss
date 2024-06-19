@@ -19,6 +19,55 @@ body{
 
 // FONT FAMILY ---
 
+// NAV ANIMATION 
+
+nav{
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: .65s;
+}
+
+.navAfter{
+    transform: translateY(0%);
+    opacity: 100; 
+}
+
+// NAV ANIMATION ---
+
+// HEADER ANIMATION 
+
+header{
+    div{
+        >:nth-child(1){
+            transform: translateY(-75%);
+            opacity: 0;
+            transition: 1s;
+        }
+        >:nth-child(2){
+            transform: translateY(50%);
+            opacity: 0;
+            transition: 1s;
+        }
+    }
+}
+
+.headerAfter{
+    div{
+        >:nth-child(1){
+            transform: translateY(0%);
+            opacity: 100;
+
+        }
+        >:nth-child(2){
+            transform: translateY(0%);
+            opacity: 100;
+        }
+    }
+}
+
+
+// HEADER ANIMATION --
+
 // CREACIÓN DE BARRAS NAV 1 Y NAV 2 
 
 body{
@@ -53,6 +102,9 @@ body{
                         svg{
                             fill: rgb(255, 255, 255);
                             width: 100%;
+                            &:hover{
+                                scale: 1.2;
+                            }
                         }
                     }
                 }
@@ -90,6 +142,7 @@ body{
                     max-width: 225px;
                     img{
                         width: 100%;
+
                     }
                 }
                 >:nth-child(3){
@@ -140,7 +193,10 @@ body{
                     h2{
                         all: unset;
                         font-weight: 600;
-                        font-size: 45px;
+                        font-size: 42.5px;
+                        span{
+                            color: $rojo;
+                        }
                     }
                 }
                 >:nth-child(4){
@@ -291,4 +347,83 @@ body{
     }
 }
 
-// MEDIAS () CREACIÓN DE BARRAS NAV 1 Y NAV 2 
+// MEDIAS (875px) CREACIÓN DE BARRAS NAV 1 Y NAV 2 
+
+@media(max-width: 475px){
+    body{
+        >:nth-child(2){
+            >:nth-child(1){
+                width: 90%;
+                gap: 2.5rem;
+                padding: 2.25rem 0rem;
+                >:nth-child(1){
+                    flex-flow: column wrap;
+                    gap: .75rem;
+                    >:nth-child(1){
+                        width: auto;
+                        display: none;
+                    }
+                    >:nth-child(2){
+                        width: auto;
+                        max-width: 200px;
+                    }
+                    >:nth-child(3){
+                        flex-flow: row wrap;
+                        width: auto;
+                        justify-content: center;
+                        >:nth-child(1){
+                            font-size: 15px;
+                        }
+                        >:nth-child(2){
+                            display: flex;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    gap: 1.5rem;
+                    >:nth-child(1){
+                        gap: 1.75rem;
+                        display: flex;
+                        a{
+                            display: flex;
+                            place-content: center;
+                            div{
+                                width: 22.5px;
+                                svg{
+                                    width: 100%;
+                                    fill: $rojo;
+                                }
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        font-size: 16px;
+                        color: $rojo;
+                    }
+                    >:nth-child(3){
+                        width: 100%;
+                        text-align: center;
+                        h2{
+                            all: unset;
+                            font-size: 27.5px;
+                           
+                        }
+                    }
+                    >:nth-child(4){
+                        width: 90%;
+                        p{
+                            all: unset;
+                            font-size: 15px;
+                        }
+                    }
+                    >:nth-child(5){
+                        padding: .55rem 1.35rem;
+                        >:nth-child(2){
+                            width: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
