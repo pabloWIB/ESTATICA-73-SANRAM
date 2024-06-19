@@ -3,7 +3,7 @@
 
 <h2 align="center">Diseño Figma: <a href="https://www.figma.com/design/TQmYp0pSzBKPIfco72N9tT/SANRAM?t=PNbYmRfR7MvxH998-0">Maquetado en Figma</a></h2>
 
-<h2 align="center">Página: <a href="https://sanramtesting1.surge.sh/"></a><span>sanram.com</span></h2>
+<h2 align="center">Página: <a href="https://sanramtesting1.surge.sh/">sanram.com</a></h2>
 
 <h2 >Tecnologías usadas👨🏻‍💻</h2>
 <br>
