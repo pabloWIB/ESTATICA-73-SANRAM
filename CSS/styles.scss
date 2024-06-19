@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
-
 // DEFINIR COLORES 
 
 $rojo: #D70022;
@@ -64,7 +63,6 @@ header{
         }
     }
 }
-
 
 // HEADER ANIMATION --
 
@@ -427,3 +425,377 @@ body{
         }
     }
 }
+
+// MAIN 
+
+body{
+    main{
+        padding: 3.5rem 0rem 0rem 0rem;
+        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+        >:nth-child(1){
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 3.5rem;
+            >:nth-child(1){
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                gap: 1.5rem;
+                >:nth-child(1){
+                    display: flex;
+                    align-items: center;
+                    gap: .75rem;
+                    >:nth-child(1){
+                        height: 1.5px;
+                        width: 45px;
+                        background: black;
+                    }
+                    >:nth-child(2){
+                        h4{
+                            all: unset;
+                            color: $rojo;
+                            font-size: 17px;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    display: flex;
+                    flex-flow: column wrap;
+                    gap: .75rem;
+                    h3, p{
+                        all: unset;
+                    }
+                    h3{
+                        font-size: 35px;
+                        font-weight: 600;
+                        color: $negroLight;
+                    }
+                    p{
+                        color: $grisClaro;
+                        font-size: 16px;
+                    }
+                }
+            }
+            .slider {
+                position: relative;
+                max-width: 500px;
+                margin: auto;
+                overflow: hidden;
+                border-radius: 20px;
+                .slides {
+                    display: flex;
+                    transition: transform 0.5s ease-in-out;
+                    border-radius: 20px;
+                    .slide {
+                        min-width: 100%;
+                        width: 100%;
+                        box-sizing: border-box;
+                        img {
+                            border-radius: 20px;
+                            width: 100%;
+                        }
+                    }
+                }
+                .dots {
+                    text-align: center;
+                    padding: 10px 0;
+                    .dot {
+                        display: inline-block;
+                        width: 10px;
+                        height: 10px;
+                        margin: 5px;
+                        background-color: #bbb;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                }
+                .dot.active {
+                    background-color: #2e2e2e;
+                }
+            }
+            >:nth-child(3){
+                text-align: center;
+                display: flex;
+                flex-flow: column wrap;
+                >:nth-child(1), >:nth-child(2){
+                    text-align: justify;
+                    span{
+                        font-weight: 700;
+                        color: black;
+                        font-size: 18px;
+                    }
+                }
+                span{
+                    color: $rojo;
+                }
+            }
+            >:nth-child(4){
+                border-radius: 12px;
+                background: $amarillo;
+                padding: 1.2rem 3rem;
+                box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+                transform: translateY(50%);
+                cursor: pointer;
+                &:hover{
+                    scale: 1.05;                
+                    transform: translateY(47.5%);
+                }
+                h5{
+                    all: unset;
+                    font-size: 17px;
+                    font-weight: 800;
+                }
+            }
+        }
+    }
+}
+
+// MAIN ---
+
+// MEDIAS (875px) MAIN 
+
+@media(max-width: 875px){
+    body{
+        main{
+            padding: 2.5rem 0rem 0rem 0rem;
+            >:nth-child(1){
+                width: 90%;
+                gap: 3rem;
+                >:nth-child(1){
+                    gap: 1.35rem;
+                    >:nth-child(1){
+                        gap: .7rem;
+                        >:nth-child(1){
+                            height: 1.45px;
+                            width: 42.5px;
+                        }
+                        >:nth-child(2){
+                            h4{
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                    >:nth-child(2){
+                        gap: .7rem;
+                        h3{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 16px;
+                        }
+                    }
+                }
+                >:nth-child(4){
+                    h5{
+                        font-size: 16.5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// MEDIAS (875px) MAIN ---
+
+
+// MAIN ANIMATION
+
+.startAnimation{
+    transform: translateY(-75%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.startAnimationCarousel{
+    scale: .5;
+    opacity: 0;
+    transition: 1s;
+
+}
+
+.animationN1{
+    transform: translateY(0%);
+    opacity: 100;
+    scale: 1;
+}
+
+// MAIN ANIMATION ---
+
+// SECTION 
+
+body{
+    section{
+        padding-top: 5rem;
+        >:nth-child(1){
+            width: 85%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-flow: column wrap;
+            gap: 5.5rem;
+            >:nth-child(1){
+                text-align: center;
+                font-size: 16.5px;
+                span{
+                    color: $rojo;
+                }
+            }
+            >:nth-child(2){
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                div{
+                    display: flex;
+                    flex-flow: row wrap;
+                    width: 49%;
+                    justify-content: space-between;
+                    div{
+                        width: 48%;
+                        display: flex;
+                        flex-flow: column wrap;
+                        gap: .85rem;
+                        text-align: center;
+                        box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+                        padding: 2rem 0rem;
+                        border-radius: 17.5px;
+                        h5, p{
+                            all: unset;
+                        }
+                        h5{
+                            font-size: 37.5px;
+                            font-weight: 700;
+                        }
+                        p{
+                            font-size: 20px;
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+}
+
+// SECTION ---
+
+// SECTION CARDS ANIMATION
+
+.cardAnimation{
+    transform: translateY(100%);
+    opacity: 50%;
+}
+
+.cardAnimationAfter{
+    transform: translateY(0%);
+    opacity: 100%;
+}
+
+// SECTION CARDS ANIMATION
+
+// SECTION MEDIAS (875px) FIRST PART
+
+@media(max-width:875px){
+    body{
+        section{
+            padding-top: 3.5rem;
+            >:nth-child(1){
+                width: 90%;
+                gap: 2rem;
+                >:nth-child(1){
+                    font-size: 16px;
+                }
+                >:nth-child(2){
+                    div{
+                        display: flex;
+                        flex-flow: column wrap;
+                        width: 47%;
+                        gap: 1.5rem;
+                        justify-content: space-between;
+                        div{
+                            width: 100%;
+                            display: flex;
+                            flex-flow: column nowrap;
+                            gap: 2rem;
+                            text-align: center;
+                            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+                            padding: 2rem 0rem;
+                            border-radius: 17.5px;
+                            h5{
+                                font-size: 32.5px;
+                            }
+                            p{
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+// SECTION MEDIAS (875px) FIRST PART ---
+
+// SECTION SECOND PART
+
+body{
+    section{
+        >:nth-child(1){
+            >:nth-child(3){
+                width: 100%;
+                display: flex;
+                flex-flow: column wrap;
+                gap: 1.5rem;
+                >:nth-child(1){
+                    display: flex;
+                    align-items: center;
+                    gap: .75rem;
+                    >:nth-child(1){
+                        height: 1.5px;
+                        width: 45px;
+                        background: black;
+                    }
+                    >:nth-child(2){
+                        h4{
+                            all: unset;
+                            color: $rojo;
+                            font-size: 17px;
+                        }
+                    }
+                }
+                >:nth-child(2){
+                    span{
+                        font-weight: 600;
+                    }
+                }
+                >:nth-child(3){
+                    display: flex;
+                    flex-flow: column wrap;
+                    gap: .75rem;
+                    h3, p{
+                        all: unset;
+                    }
+                    h3{
+                        font-size: 35px;
+                        font-weight: 600;
+                        color: $negroLight;
+                    }
+                    p{
+                        color: $grisClaro;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SECTION SECOND PART ---
