@@ -1371,3 +1371,29 @@ body footer > :nth-child(2) {
     color: white;
   }
 }
+.preguntasFrecuentes {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.preguntasFrecuentes > :nth-child(1) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+.preguntasFrecuentes > :nth-child(1) > :nth-child(1) {
+  width: 45px;
+  height: 1.5px;
+  background: #D70022;
+}
+.preguntasFrecuentes > :nth-child(1) h2 {
+  color: #D70022;
+}

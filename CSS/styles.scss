@@ -1187,3 +1187,27 @@ body{
 }
 
 // MEDIAS (875px) FOOTER ---
+
+// preguntas frecuentes
+
+.preguntasFrecuentes{
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+    >:nth-child(1){
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        gap: 1rem;
+        >:nth-child(1){
+            width: 45px;
+            height: 1.5px;
+            background: $rojo;
+        }
+        h2{
+            color: $rojo;
+        }
+    }
+}
+
+// preguntas frecuentes ---
