@@ -12,37 +12,79 @@ $(function(){
 // CAROUSEL 
 
 $(document).ready(function () {
-    let currentIndex = 0;
-    const slides = $('.slide');
-    const dots = $('.dot');
-    const slideCount = slides.length;
+    // Initialize the first carousel
+    function setupCarousel1() {
+        let currentIndex = 0;
+        const $carousel = $('#mainID1');
+        const $slides = $carousel.find('.slide');
+        const $dots = $carousel.find('.dot');
+        const slideCount = $slides.length;
 
-    function showSlide(index) {
-        slides.each(function (i) {
-            $(this).css('transform', 'translateX(' + (-100 * index) + '%)');
+        function showSlide(index) {
+            $slides.each(function (i) {
+                $(this).css('transform', 'translateX(' + (-100 * index) + '%)');
+            });
+            $dots.removeClass('active');
+            $dots.eq(index).addClass('active');
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slideCount;
+            showSlide(currentIndex);
+        }
+
+        $dots.each(function (index) {
+            $(this).click(function () {
+                currentIndex = index;
+                showSlide(currentIndex);
+            });
         });
-        dots.removeClass('active');
-        dots.eq(index).addClass('active');
-    }
 
-    function nextSlide() {
-        currentIndex = (currentIndex + 1) % slideCount;
+        setInterval(nextSlide, 3500);
+
         showSlide(currentIndex);
     }
 
-    dots.each(function (index) {
-        $(this).click(function () {
-            currentIndex = index;
+    // Initialize the second carousel with different behavior
+    function setupCarousel2() {
+        let currentIndex = 0;
+        const $carousel = $('#mainID2');
+        const $slides = $carousel.find('.slide');
+        const $dots = $carousel.find('.dot');
+        const slideCount = $slides.length;
+
+        function showSlide(index) {
+            $slides.each(function (i) {
+                $(this).css('opacity', i === index ? 1 : 0);
+            });
+            $dots.removeClass('active');
+            $dots.eq(index).addClass('active');
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % slideCount;
             showSlide(currentIndex);
+        }
+
+        $dots.each(function (index) {
+            $(this).click(function () {
+                currentIndex = index;
+                showSlide(currentIndex);
+            });
         });
-    });
 
-    setInterval(nextSlide, 3500);
+        setInterval(nextSlide, 5000); // Different interval for the second carousel
 
-    showSlide(currentIndex);
+        showSlide(currentIndex);
+    }
+
+    // Initialize both carousels
+    setupCarousel1();
+    setupCarousel2();
 });
 
 // CAROUSEL ---
+
 
 // VIEWPORT FUNCTION
 
@@ -73,24 +115,6 @@ window.addEventListener("resize", toggleAnimationN1);
 toggleAnimationN1();
 
 // VIEWPORT ANIMATIONS 1 ---
-
-
-
-// VIEWPORT ANIMATIONS 2
-
-function toggleAnimationN2() {
-    var targetSection = document.getElementById("mainID2");
-    if (isElementInViewport(targetSection)) {
-        targetSection.classList.add('animationN1');
-    } 
-}
-
-window.addEventListener("scroll", toggleAnimationN2);
-window.addEventListener("resize", toggleAnimationN2);
-
-toggleAnimationN2();
-
-// VIEWPORT ANIMATIONS 2 ---
 
 // VIEWPORT ANIMATIONS 3
 
@@ -173,7 +197,6 @@ toggleAnimationN7();
 
 // VIEWPORT ANIMATIONS 7 ---
 
-
 // RESET VIEWPORT ANIMATIONS
 
 function scrollValue3() {
@@ -183,7 +206,6 @@ function scrollValue3() {
         mainID3Get.classList.remove('animationN1');
 
         sectionAnim1.classList.remove('cardAnimationAfter');
-        sectionAnim2.classList.remove('cardAnimationAfter');
         sectionAnim3.classList.remove('cardAnimationAfter');
         sectionAnim4.classList.remove('cardAnimationAfter');
     } 
