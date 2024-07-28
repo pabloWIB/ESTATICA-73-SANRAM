@@ -202,7 +202,6 @@ toggleAnimationN7();
 function scrollValue3() {
     var scroll = window.scrollY;
     if (scroll < 10) {
-        mainID1.classList.remove('animationN1');
         mainID3Get.classList.remove('animationN1');
 
         sectionAnim1.classList.remove('cardAnimationAfter');
