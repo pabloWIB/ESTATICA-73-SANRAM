@@ -1179,7 +1179,7 @@ body footer > :nth-child(2) {
 }
 .whatsappScreenPositionInternal .modalWindow {
   width: 100%;
-  display: flex;
+  display: none;
   flex-flow: column wrap;
   transform: translateY(25%);
   opacity: 0%;
@@ -1277,6 +1277,7 @@ body footer > :nth-child(2) {
   width: 100%;
 }
 .whatsappScreenPositionInternal .modalWindowNew {
+  display: flex;
   transform: scale(1) translateY(0%) translateX(0%);
   opacity: 100%;
   visibility: 1;

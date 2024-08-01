@@ -1427,7 +1427,7 @@ body {
     gap: .5rem;
     .modalWindow{
         width: 100%;
-        display: flex;
+        display: none;
         flex-flow: column wrap;
         transform: translateY(25%);
         opacity: 0%;
@@ -1527,6 +1527,7 @@ body {
         }
     }
     .modalWindowNew{
+        display: flex;
         transform: scale(1) translateY(0%) translateX(0%);
         opacity: 100%;
         visibility: 1;
