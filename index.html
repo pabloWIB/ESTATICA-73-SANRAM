@@ -103,7 +103,7 @@
       </div>
     </div>
     </header>
-    <div class="formulario">
+    <aside class="formulario">
       <div>
         <h4>Dejanos tu información, nosotros te contactamos</h4>
       </div>
@@ -148,7 +148,7 @@
           <button type="submit" value="ENVIAR">ENVIAR</button>
         </form>
       </div>
-    </div>
+    </aside>
     <main>
       <div>
         <div id="mainID1" class="">
@@ -667,15 +667,50 @@
         </p>
       </div>
     </footer>
-    <!-- <div class="whatsapp-inegration">
-        <div class="whatsappModal" id="whatsappModal">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    <div class="whatsappScreenPositionInternal">
+      <div class="modalWindow" id="modalWindow">
+        <div>
+          <div>
+            <div>
+              <p>Escribenos</p>
+            </div>
+            <div id="closeWhatsApp">
+              <img src="IMG/close.svg" alt="Close">
+            </div>
+          </div>
+          <div>
+            <div>
+              <div>
+                <p>Hola👋, por favor déjanos tu mensaje.</p>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <textarea id="mensajeWhatsApp" maxlength="500" name="message" placeholder="Mensaje..." aria-label="Mensaje..." tabindex="0"></textarea>
+                </div>
+                <button type="button" id="sendMensajeWhatsApp">
+                  <img src="IMG/send.svg" alt="send">
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="modal" id="modal">
-            <p>HOLA</p>
+      </div>
+      <div class="whatsappCallAction">
+        <div id="openWhatsApp">
+          <img src="IMG/whatsappNormal.svg" alt="WhatsApp">
         </div>
-    </div> -->
+      </div>
+
+      <div class="messengerCallAction">
+        <a target="_blank" href="https://m.me/trapeadormicrofibramayoreo">
+          <img src="IMG/messenger.svg" alt="WhatsApp">
+        </a>
+      </div>
+    </div>
     <script src="JS/script.js"></script>
     <script src="JS/scriptFormulario.js"></script>
+    <script src="JS/scriptWhatsApp.js"></script>
   </body>
 </html>

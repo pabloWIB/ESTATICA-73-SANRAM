@@ -34,3 +34,9 @@ $(document).ready(function () {
     // Initialize the new carousel
     setupCarousel('mainID2');
 });
+
+
+var fecha = new Date();
+var fechaAño = fecha.getFullYear();
+
+var dateCopyright2 = document.getElementById('dateCopyright2').textContent = fechaAño;
