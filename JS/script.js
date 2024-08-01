@@ -85,7 +85,6 @@ $(document).ready(function () {
 
 // CAROUSEL ---
 
-
 // VIEWPORT FUNCTION
 
 function isElementInViewport(element) {
@@ -205,6 +204,7 @@ function scrollValue3() {
         mainID3Get.classList.remove('animationN1');
 
         sectionAnim1.classList.remove('cardAnimationAfter');
+        sectionAnim2.classList.remove('cardAnimationAfter');
         sectionAnim3.classList.remove('cardAnimationAfter');
         sectionAnim4.classList.remove('cardAnimationAfter');
     } 
@@ -221,3 +221,23 @@ var fechaAño = fecha.getFullYear();
 document.getElementById('dateCopyright').textContent = fechaAño;
 
 // dateCopyright
+
+var startDate = new Date('2024-07-31');
+
+var timeDifference = fecha - startDate;
+var daysPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+var initialProductosVendidosCount = 1816;
+var initialClienteSatisfechosCount = 75;
+var startYear = 2024;
+var initialAñosDeExperiencia = 5;
+
+var productosVendidosCount = initialProductosVendidosCount + (daysPassed * 2);
+var clienteSatisfechosCount = initialClienteSatisfechosCount + Math.floor(daysPassed / 15);
+var currentYear = fecha.getFullYear();
+var añosDeExperienciaCount = initialAñosDeExperiencia + (currentYear - startYear);
+
+var productosVendidos = document.getElementById('productosVendidos').textContent = "+" + productosVendidosCount;
+var añosDeExperiencia = document.getElementById('añosDeExperiencia').textContent = "+" + añosDeExperienciaCount;
+var clienteSatisfechos = document.getElementById('clienteSatisfechos').textContent = "+" + clienteSatisfechosCount;
+var presenciaEnPaises = document.getElementById('presenciaEnPaises').textContent = "+" + (fechaAño-2022);

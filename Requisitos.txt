@@ -1,0 +1,20 @@
+-Organizar Slides IMG de primero
+-Cambiar colores
+-Texto después de las imagénes 
+-Organizar error años de experiencia
+-Organizar redes sociales
+-Organizar ID's (Años de experiencia, Productos vendidos, clientes recurrentes)
+-Reducir tamaño IMG´s
+-Organizar Favicon
+-Organizar shadow Contacta con Nosotros
+-Cambiar correo
+-Integrar correo + test
+
+FALTA:
+
+-Integrar WhatsApp chat 
+-Revisar SEO
+-Subir proyecto
+-Enviar PayPal (25 USD)
+-Investigar AI video de un trapeador gigante que limpue una ciudad inundada
+-Después de entregar y pagado el proyecto proponer escalar el proyecto en el futuro para agregar catalogo de productos 
