@@ -194,6 +194,7 @@ body > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(3) a {
   all: unset;
   font-size: 17px;
   cursor: pointer;
+  text-decoration: underline;
 }
 body > :nth-child(2) > :nth-child(1) > :nth-child(1) > :nth-child(3) a:hover {
   text-decoration: underline;
@@ -539,6 +540,7 @@ body main > :nth-child(1) > :nth-child(1) > :nth-child(3) {
   display: flex;
   flex-flow: column wrap;
   gap: 0.75rem;
+  margin-bottom: -2.5rem;
 }
 body main > :nth-child(1) > :nth-child(1) > :nth-child(3) h3,
 body main > :nth-child(1) > :nth-child(1) > :nth-child(3) p {
@@ -547,10 +549,10 @@ body main > :nth-child(1) > :nth-child(1) > :nth-child(3) p {
 body main > :nth-child(1) > :nth-child(1) > :nth-child(3) h3 {
   font-size: 35px;
   font-weight: 600;
-  color: #323232;
+  color: black;
 }
 body main > :nth-child(1) > :nth-child(1) > :nth-child(3) p {
-  color: #969696;
+  color: black;
   font-size: 16px;
 }
 body main > :nth-child(1) > :nth-child(2) {

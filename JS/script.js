@@ -214,30 +214,45 @@ window.addEventListener('scroll', scrollValue3);
 
 // RESET VIEWPORT ANIMATIONS ---
 
-// dateCopyright
+var date = new Date();
+var dateCopyrightY = date.getFullYear();
 
-var fecha = new Date();
-var fechaAño = fecha.getFullYear();
-document.getElementById('dateCopyright').textContent = fechaAño;
+var dateCopyright = document.getElementById('dateCopyright').textContent = dateCopyrightY;
 
-// dateCopyright
 
-var startDate = new Date('2024-07-31');
+document.addEventListener("DOMContentLoaded", function() {
+    let productosVendidos = 11820;
 
-var timeDifference = fecha - startDate;
-var daysPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    function actualizarProductosVendidos() {
+        productosVendidos += 100;
+        document.getElementById('productosVendidos').textContent = '+' + productosVendidos;
+    }
+    actualizarProductosVendidos();
 
-var initialProductosVendidosCount = 1816;
-var initialClienteSatisfechosCount = 75;
-var startYear = 2024;
-var initialAñosDeExperiencia = 5;
+    setInterval(actualizarProductosVendidos, 900000);
+});
 
-var productosVendidosCount = initialProductosVendidosCount + (daysPassed * 2);
-var clienteSatisfechosCount = initialClienteSatisfechosCount + Math.floor(daysPassed / 15);
-var currentYear = fecha.getFullYear();
-var añosDeExperienciaCount = initialAñosDeExperiencia + (currentYear - startYear);
+const productosVendidos = document.getElementById('productosVendidos').textContent = 11182;
 
-var productosVendidos = document.getElementById('productosVendidos').textContent = "+" + productosVendidosCount;
-var añosDeExperiencia = document.getElementById('añosDeExperiencia').textContent = "+" + añosDeExperienciaCount;
-var clienteSatisfechos = document.getElementById('clienteSatisfechos').textContent = "+" + clienteSatisfechosCount;
-var presenciaEnPaises = document.getElementById('presenciaEnPaises').textContent = "+" + (fechaAño-2022);
+
+
+const fechaInicio = new Date(2019, 0, 1); // 1 de enero de 2019
+
+
+
+function calcularAñosDeExperiencia() {
+    const fechaActual = new Date();
+    const diferenciaAños = fechaActual.getFullYear() - fechaInicio.getFullYear();
+    return diferenciaAños;
+}
+
+function actualizarExperiencia() {
+    const añosDeExperiencia = calcularAñosDeExperiencia();
+    const añosDeExperienciaElemento = document.getElementById('añosDeExperiencia');
+    añosDeExperienciaElemento.textContent = '+' + añosDeExperiencia;
+}
+
+actualizarExperiencia();
+
+var clienteSatisfechos = document.getElementById('clienteSatisfechos').textContent = '+' + 75;
+var presenciaEnPaises = document.getElementById('presenciaEnPaises').textContent = '+' + 2;
