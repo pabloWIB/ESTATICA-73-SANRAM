@@ -40,3 +40,6 @@ var fecha = new Date();
 var fechaAño = fecha.getFullYear();
 
 var dateCopyright2 = document.getElementById('dateCopyright2').textContent = fechaAño;
+
+
+

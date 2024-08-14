@@ -482,6 +482,44 @@ body > :nth-child(2) > :nth-child(1) > :nth-child(2) > :nth-child(4) > :nth-chil
   background-color: #2e2e2e;
 }
 
+.slider3 {
+  position: relative;
+  max-width: 500px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.slider3 .slides3 {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 20px;
+}
+.slider3 .slides3 .slide3 {
+  min-width: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+.slider3 .slides3 .slide3 img {
+  border-radius: 20px;
+  width: 100%;
+}
+.slider3 .dots3 {
+  text-align: center;
+  padding: 10px 0;
+}
+.slider3 .dots3 .dot3 {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slider3 .dot3.active {
+  background-color: #2e2e2e;
+}
+
 body main {
   padding: 3.5rem 0rem 0rem 0rem;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
@@ -954,7 +992,6 @@ body section > :nth-child(1) > :nth-child(5) {
   box-shadow: 0px 5px 10px 1px rgba(0, 0, 0, 0.4);
   border-radius: 15px;
   padding: 2.25rem 0rem;
-  margin-top: -2rem;
 }
 body section > :nth-child(1) > :nth-child(5) h3, body section > :nth-child(1) > :nth-child(5) p {
   all: unset;
