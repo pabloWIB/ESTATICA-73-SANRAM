@@ -1357,4 +1357,20 @@ body footer > :nth-child(2) {
 .whatsappScreenPositionInternal .messengerCallAction > :nth-child(1) img {
   width: 100%;
   cursor: pointer;
+}
+
+.lastIMG {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.lastIMG div {
+  width: 100%;
+  max-width: 395px;
+}
+.lastIMG div img {
+  width: 100%;
 }/*# sourceMappingURL=styles.css.map */

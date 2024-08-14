@@ -1617,3 +1617,18 @@ body {
 
 // WhatsApp screen ---
 
+.lastIMG{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    div{
+        width: 100%;
+        max-width: 395px;
+        img{
+            width: 100%;
+        }
+    }
+}
